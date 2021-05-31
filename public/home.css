@@ -1,0 +1,36 @@
+.centerdiv {
+    background-color: rgba(40, 39, 41, 0.829);
+}
+
+.con {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.button {
+    background-color: rgb(164, 84, 60);
+    border: 1px solid rgb(164, 84, 60);
+    width: 50%;
+    height: fit-content;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 50px;
+    margin-bottom: 15%;
+    cursor: pointer;
+    
+} 
+
+h1 {
+    color: white;
+    font-size: 70px;
+    margin: 50px;
+}

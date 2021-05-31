@@ -1,0 +1,85 @@
+<h1>
+    <center>FILTERS</center>
+</h1>
+<div id="filter-div">
+    <label for="age" class="label">Age</label> <br>
+    <select name="age" class="dropdown decorated" id="age" name="age" onfocus='this.size=5;' onblur='this.size=0;'
+        onchange='this.size=1; this.blur();'>
+        <option value="none" selected disabled hidden>
+            Select an Option
+        </option>
+        <option value="7+">7+</option>
+        <option value="13+">13+</option>
+        <option value="16+">16+</option>
+        <option value="18+">18+</option>
+        <option value="all">all</option>
+    </select> <br> <br>
+    <label for="imdb" class="label">IMDb</label><br>
+    <select name="imdb" class="dropdown" id="imdb" name="imdb" onfocus='this.size=9;' onblur='this.size=0;'
+        onchange='this.size=1; this.blur();'>
+        <option value="none" selected disabled hidden>
+            Select an Option
+        </option>
+        <option value="1">>1</option>
+        <option value="2">>2</option>
+        <option value="3">>3</option>
+        <option value="4">>4</option>
+        <option value="5">>5</option>
+        <option value="6">>6</option>
+        <option value="7">>7</option>
+        <option value="8">>8</option>
+        <option value="9">>9</option>
+    </select> <br> <br>
+    <label for="rotten" class="label">Rotten Tomatoes</label>
+    <br>
+    <select name="rotten" class="dropdown" id="rotten" name="rotten" onfocus='this.size=5;' onblur='this.size=0;'
+        onchange='this.size=1; this.blur();'>
+        <option value="none" selected disabled hidden>
+            Select an Option
+        </option>
+        <option value="20">>20%</option>
+        <option value="40">>40%</option>
+        <option value="60">>60%</option>
+        <option value="80">>80%</option>
+        <option value="90">>90%</option>
+    </select> <br> <br>
+    <label for="time" class="label">Runtime</label>
+    <br>
+    <select name="time" class="dropdown" id="time" name="time" onfocus='this.size=4;' onblur='this.size=0;'
+        onchange='this.size=1; this.blur();'">
+        <option value=" none" selected disabled hidden>
+        Select an Option
+        </option>
+        <option value="50">>50</option>
+        <option value="100">>100</option>
+        <option value="150">>150</option>
+        <option value="200">>200</option>
+    </select> <br><br>
+
+    <label for="stream" class="label">Streaming Service</label>
+    <label class="main label">Netflix
+        <input type="checkbox" id="netflix" name="netflix" value="netflix">
+        <span class="mark">&nbsp;</span>
+    </label>
+
+    <label class="main label">Prime
+        <input type="checkbox" id="prime" name="prime" value="prime">
+        <span class="mark">&nbsp;</span>
+    </label>
+
+    <label class="main label">Hulu
+        <input type="checkbox" id="hulu" name="hulu" value="hulu">
+        <span class="mark">&nbsp;</span>
+    </label>
+
+    <label class="main label">Disney+
+        <input type="checkbox" id="disney" name="disney" value="disney">
+        <span class="mark">&nbsp;</span>
+    </label>
+    <br>
+    <br>
+    <label for="year" class="label">Year (between 1900 and 2021):</label><br>
+    <input type="text" placeholder="from" name="from" style="margin-left: 5px;width: 25%;"> -
+    <input type="text" placeholder="to" name="to" style="width: 25%;"><br>
+    <input type="submit">
+</div>

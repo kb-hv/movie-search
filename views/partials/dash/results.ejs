@@ -1,0 +1,52 @@
+<% if(movies.length> 0) { %>
+    <% movies.forEach(movie=> { %>
+        <div class="movie-card">
+            <span id="title">
+                <b>
+                    <%= movie.Title %>
+                </b>
+            </span>
+            <a href="/write-review?mov=<%= movie.ID %>&title=<%= movie.Title %>">
+                <button type="button" class="review">Write a review</button>
+            </a> <br><br>
+            <a href="/view-reviews?movID=<%= movie.ID %>">
+                <button type="button" class="review">View reviews</button>
+            </a>
+            <div class="card-section">
+                <span>IMDb: <%= movie.IMDb %></span>
+                <span>Runtime: <%= movie.Runtime %> </span>
+            </div>
+            <div class="card-section">
+                <span>
+                    Age rating: <%= movie.Age %>
+                </span>
+                <span> Year: <%= movie.Year %></span>
+            </div>
+            <div class="card-section">
+                <span>
+                    Available on:
+                    <% if (movie.Netflix==1) { %>
+                        | Netflix
+                        <% } if (movie["Prime Video"]==1) { %>
+                            | Prime
+                            <% } if (movie.Hulu==1) { %>
+                                | Hulu
+                                <% } if (movie["Disney+"]==1) { %>
+                                    | Disney+
+                                    <% } %>
+                                        |
+                </span>
+                <span>
+                    Rotten tomatoes: <%= movie["Rotten Tomatoes"] %>
+                </span>
+            </div>
+            </p>
+        </div>
+        <% }) %>
+            <% } else { %>
+                <div id="placeholder">
+                    <h1>
+                        <%= message %>
+                    </h1>
+                </div>
+                <% } %>

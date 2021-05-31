@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Movies::Search | Dashboard</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/dashboard.css">
+</head>
+
+<body>
+    <div class="con">
+        <form class="cl" id="filters" action="/dashboard" method="POST" novalidate>
+            <%- include('./partials/dash/filters-form.ejs') %>
+        </form>
+        <form class="cl" id="search" action="/dashboard" method="POST" novalidate>
+            <%- include('./partials/dash/search-form.ejs') %>
+        </form>
+        <div class="cl" id="results">
+            <%- include('./partials/dash/results.ejs', {movies: movies}) %>
+        </div>
+    </div>
+</body>
+
+</html>

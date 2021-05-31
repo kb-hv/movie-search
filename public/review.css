@@ -1,0 +1,68 @@
+.con {
+    background-color: rgba(40, 39, 41, 0.829);
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    padding: 20px;
+    width: min-content;
+    height: min-content;
+    flex-direction: column;
+    margin: 5vh auto;
+}
+
+.centerdiv {
+    min-width: 600px;
+    overflow-y: auto;
+    max-height: 60vh;
+    padding: 10px;
+    margin: 0px;
+}
+
+h1, h2 {
+    color: white;
+    font-size: 30px;
+    margin: 10px auto;
+}
+
+h1 {
+    font-size: 50px;
+    margin-left: 0px;
+}
+
+.field {
+    padding: 15px 10px;
+    font-size: large;
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+form {
+    margin: 10px;
+}
+textarea {
+    height: 30vh;
+}
+
+button {
+    background-color: rgb(164, 84, 60);
+    width: 50%;
+    height: fit-content;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.review-card {
+    margin: 5px;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}

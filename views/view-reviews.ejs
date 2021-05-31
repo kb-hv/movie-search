@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Movie::Search | Reviews</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/review.css">
+</head>
+<body>
+    <div class="con">
+        <h1> <%= revs.Title %>  </h1>
+        <h2>Reviews</h2>
+        <div class="centerdiv">
+            <% if (revs.Reviews.length > 0) { %>
+            <% revs.Reviews.forEach((rev) => { %>
+                <div class="review-card">
+                    <b>
+                        <%= rev.displayName %>
+                    </b>
+                <br>
+                <%= rev.body %>
+            </div>
+            <% }) %>
+            <% } else { %>
+                <p style="color: white;">There are no reviews for this movie yet</p>
+            <%} %>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <title>Movies::Search | Write a Review</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="review.css">
+</head>
+<body>
+    
+    <div class="con">
+        <h1 id="title"><%= title %></h1>
+        <h2>Write a Review</h2>
+        <form action="/write-review" method="POST">
+        <div class="centerdiv">
+                <input id="name" name="name" placeholder="Display Name" type="text" required class="field">
+                <br><br>
+                <textarea id="msg" name="review" placeholder="Review" required class="field"></textarea>
+                <input name="id" style="display: none;" value="<%= movID %>">
+                    <button type="submit" id="submit" class="button">Submit</button>
+        </div>
+    </form>
+    </div>
+    
+    
+</body>
+</html>
